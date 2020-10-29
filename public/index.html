@@ -3,15 +3,22 @@
 <html>
   <head>
     <title>Google Shopping</title>
+    <link rel="stylesheet" href="/services.css">
   </head>
   <body>
-    <div id="productImagesService"></div>
-    <div id="product-information"></div>
-    <div id="reviews-service"></div>
-    <div id="app"></div>
-    <script src="http://localhost:3001/bundle-reviews-service.js"></script>
-    <script src="http://localhost:3002/bundle-seller-catalog.js"></script>
-    <script src="http://localhost:3003/bundle-images-service.js"></script>
-    <script src="http://localhost:3004/bundle-product-information-service.js"></script>
+    <div id="services">
+      <section class="gallery">
+        <!-- <div id="product-information"></div> -->
+        <div id="productImagesService"></div>
+        <div id="price-card"></div>
+      </section>
+      <section>
+        <div id="reviews-service"></div>
+      </section>
+      <script src="http://18.222.37.28:3001/bundle-reviews-service.js"></script>
+      <script src="http://localhost:3002/bundle-seller-catalog.js"></script>
+      <script src="http://localhost:3003/bundle-images-service.js"></script>
+      <!-- <script src="http://localhost:3004/bundle-product-information-service.js"></script> -->
+    </div>
   </body>
 </html>
