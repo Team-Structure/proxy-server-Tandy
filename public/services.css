@@ -3,6 +3,62 @@ html, body {
   padding: 0;
 }
 
+#header-container {
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.header {
+  border-style: solid;
+}
+
+.header-middle {
+  border: 1px solid #dadce0;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  max-width: 640px;
+  padding: 0 14px;
+  width: 50%;
+}
+
+.search-box {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  width: 100%;
+}
+
+.img-magnifying-glass {
+  background: url('./images/magnifying-glass.svg');
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.search-input::-webkit-input-placeholder {
+  font-size: 17px;
+}
+
+.search-input {
+  background-color: transparent;
+  border: 0px none;
+  font-size: 18px;
+  height: 35px;
+  line-height: 48px;
+  width: 100%;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
 #services {
   display: grid;
   margin: 38px;
