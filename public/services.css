@@ -1,4 +1,5 @@
 html, body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -12,10 +13,7 @@ html, body {
   padding: 8px;
 }
 
-.header {
-  border-style: solid;
-}
-
+/* Search Bar Start*/
 .header-middle {
   border: 1px solid #dadce0;
   border-radius: 24px;
@@ -58,6 +56,57 @@ html, body {
 .search-input:focus {
   outline: none;
 }
+/* Search Bar End*/
+
+/*Header Right Start*/
+
+.header-right {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  width: 160px;
+  justify-content: space-between;
+}
+
+.shopping-cart {
+  cursor: pointer;
+}
+
+.shopping-cart-img {
+  background: url('./images/shopping-cart.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  height: 27px;
+  width: 27px;
+}
+
+.account-menu {
+  cursor: pointer;
+}
+
+.account-menu {
+  background: url('./images/account-menu.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 27px 27px;
+  height: 27px;
+  width: 27px;
+}
+
+.sign-in-button {
+  background: #1a73e8;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  width: 80px;
+}
+/*Header Right End*/
 
 #services {
   display: grid;
