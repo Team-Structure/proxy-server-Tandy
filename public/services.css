@@ -10,8 +10,54 @@ html, body {
   flex-direction: row;
   height: 48px;
   justify-content: space-between;
-  padding: 8px;
+  padding: 20px;
 }
+
+/* Header left Start */
+
+.web-menu {
+  background: url('./images/hamburger-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  border: 0;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.header-left {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  width: 230px;
+  justify-content: space-between;
+}
+
+.logo {
+  align-items: center;
+  color: #5f6368;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+}
+
+.logo-img {
+  background: url('./images/logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85px 30px;
+  height: 40px;
+  width: 100px;
+}
+
+.shopping-text {
+  padding-top: 3px;
+}
+
+/* Header left End */
 
 /* Search Bar Start*/
 .header-middle {
