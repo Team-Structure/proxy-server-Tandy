@@ -14,6 +14,14 @@ html, body {
 }
 
 /* Header left Start */
+.header-left {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  width: 250px;
+  justify-content: space-between;
+}
 
 .web-menu {
   background: url('./images/hamburger-icon.svg');
@@ -21,18 +29,22 @@ html, body {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   border: 0;
+  border-radius: 50%;
   cursor: pointer;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
 }
 
-.header-left {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  width: 230px;
-  justify-content: space-between;
+.web-menu:hover {
+  background-color: rgb(220, 220, 220, 0.5);
+}
+
+.web-menu:active {
+  background-color: rgb(220, 220, 220, 0.8);
+}
+
+.web-menu:focus {
+  outline: none;
 }
 
 .logo {
@@ -56,7 +68,6 @@ html, body {
 .shopping-text {
   padding-top: 3px;
 }
-
 /* Header left End */
 
 /* Search Bar Start*/
@@ -69,6 +80,14 @@ html, body {
   max-width: 640px;
   padding: 0 14px;
   width: 50%;
+}
+
+.header-middle:hover {
+  box-shadow: 1px 2px 3px #999;
+}
+
+.header-middle:focus-within {
+  box-shadow: 1px 2px 3px #999;
 }
 
 .search-box {
@@ -105,18 +124,28 @@ html, body {
 /* Search Bar End*/
 
 /*Header Right Start*/
-
 .header-right {
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
-  width: 160px;
+  width: 170px;
   justify-content: space-between;
 }
 
 .shopping-cart {
+  border-radius: 50%;
   cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.shopping-cart:hover {
+  background-color: rgb(220, 220, 220, 0.5);
+}
+
+.shopping-cart:active {
+  background-color: rgb(220, 220, 220, 0.8);
 }
 
 .shopping-cart-img {
@@ -124,21 +153,29 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  height: 27px;
-  width: 27px;
+  height: 35px;
+  margin-top: 2px;
+  width: 35px;
 }
 
 .account-menu {
+  border-radius: 50%;
   cursor: pointer;
+  height: 40px;
+  width: 40px;
 }
 
-.account-menu {
+.account-menu:hover {
+  background-color: rgb(220, 220, 220, 0.5);
+}
+
+.account-menu-img {
   background: url('./images/account-menu.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 27px 27px;
-  height: 27px;
-  width: 27px;
+  height: 40px;
+  width: 40px;
 }
 
 .sign-in-button {
@@ -149,6 +186,7 @@ html, body {
   font-size: 14px;
   height: 36px;
   line-height: 36px;
+  margin-left: 13px;
   text-align: center;
   width: 80px;
 }
