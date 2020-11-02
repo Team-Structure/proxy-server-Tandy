@@ -1,5 +1,6 @@
 stages:
   - build
+  - deploy
 
 build_image:
   stage: build
@@ -16,3 +17,13 @@ build_image:
     - main
   variables:
     DOCKER_HUB_IMAGE: tandyn/rpt23-proxy-server
+
+deploy_ec2:
+  stage: deploy
+  cache: {}
+  tags:
+    - tandy
+  script:
+    - ssh ec2-user@$DEPLOY_SERVER "df -hT && docker-compose pull && docker-compose down -v && docker-compose up -d && docker rmi $(docker images -q --filter "dangling=true") && df -hT"
+  only:
+    - main
